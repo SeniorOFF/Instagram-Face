@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    background-color: #08422d;
+    overflow: hidden;
+    font-family: 'KoHo', sans-serif;
+}
+header .menyu{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .menyu .logo h1{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: 100;
+}
+header .menyu .link{
+    margin-top: 11px;
+
+}
+header .menyu .link ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+
+}
+header .menyu .link ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    margin-right: 10px;
+    transition: 0.5s ease;
+}
+header .menyu ul li a:hover{
+    background-color: rgba(240, 248, 255, 0.233);
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+@media(max-width:570px){
+    header .menyu{
+    flex-direction: column;
+    text-align: center;
+    }
+}
+header .headinfo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+header .headinfo .infodown h4{
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+}
+header .headinfo .infodown h2{
+    color: white;
+    font-size: 30px;
+}
+header .headinfo .infodown p{
+    color: whitesmoke;
+    margin-top: 5px;
+}
+header .infodown button{
+    width: 120px;
+    padding: 13px;
+    outline: none;
+    margin: 10px;
+    font-size: 10px;
+    background: white;
+    border: 1px solid white;
+    color: #08422d;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+    transition: 0.2s ease-in-out;
+}
+header .infodown button:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
+
+}
+header .infodown input{
+    width: 120px;
+    padding: 13px;
+    outline: none;
+    margin: 10px;
+    font-size: 10px;
+    background: none;
+    border: 1px solid white;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+header .infodown input:hover{
+    background: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+header .headinfo .infodown button span{
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    height: 150%;
+    background: #08422d;
+    transform: translateY(70%);
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+header .headinfo .infodown button span:nth-child(1){
+    margin-left: -17px;
+}
+header .headinfo .infodown button span:nth-child(2){
+    margin-left: -60px;
+}
+header .headinfo .infodown button span:nth-child(3){
+    margin-left: -90px;
+}
+header .headinfo .infodown button span:nth-child(4){
+    margin-left: -100px;
+}
+header .headinfo .infodown button:hover span:nth-child(4){
+    transform: translateY(-40%);
+    transition: 0.4s;
+}
+header .headinfo .infodown button:hover span:nth-child(3){
+    transform: translateY(-40%);
+    transition: 0.7s;
+}
+header .headinfo .infodown button:hover span:nth-child(2){
+    transform: translateY(-40%);
+    transition: 0.8s;
+}
+header .headinfo .infodown button:hover span:nth-child(1){
+    transform: translateY(-40%);
+    transition: 1s;
+}
+header .headinfo .infodown h3{
+    color: rgb(134, 134, 134);
+    font-family: bahnschrift;
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+header .headinfo .infoimg img{
+    /* margin-top: -50px; */
+    margin: -50px -80px;
+}
+@media (max-width:770px){
+    header .headinfo{
+        flex-direction: row-reverse;
+    }
+}
+@media (max-width:594px){
+    header .headinfo{
+        flex-direction: column;
+        text-align: center;
+    }
+    header .headinfo .infoimg{
+        margin-top: 50px;
+    }
+    header{
+        height: 140vh;
+    }
+}
+
+
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.social .socialtext{
+    margin: 20px 40px;
+}
+.social .socialtext h1{
+    font-size: 25px;
+    font-family: bahnschrift;
+    font-weight: 100;
+}
+.social .socialtext h4{
+    font-size: 20px;
+    font-family: bahnschrift;
+    font-weight: 100;
+}
+.social .socialicon{
+    margin: 30px 40px;
+}
+.social .socialicon img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: 0.2s ease-in-out;
+}
+.social .socialicon img:hover{
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
+@media (max-width: 770px){
+    .social{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width:465px){
+    .social .socialtext h1{
+        font-size: 15px;
+    }
+    .social .socialtext h4{
+        font-size: 15px;
+    }
+    .social .socialicon img{
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+    }
+}
+header .loadimg img{
+    position: absolute;
+    margin-top: 7px;
+    transform: translateX(-90px);
+    transition: 5s ease-in-out;
+    overflow: hidden;
+}
